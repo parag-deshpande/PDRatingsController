@@ -1,0 +1,22 @@
+{
+  "name": "PDRatingsController",
+  "version": "0.1.0",
+  "summary": "A short description of PDRatingsController.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/<GITHUB_USERNAME>/PDRatingsController",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "parag-deshpande": "parag.deshpande@klouddata.com"
+  },
+  "source": {
+    "git": "https://github.com/<GITHUB_USERNAME>/PDRatingsController.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "PDRatingsController/Classes/**/*"
+}

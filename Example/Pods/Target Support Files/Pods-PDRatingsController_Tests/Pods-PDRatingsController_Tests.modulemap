@@ -1,0 +1,6 @@
+framework module Pods_PDRatingsController_Tests {
+  umbrella header "Pods-PDRatingsController_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

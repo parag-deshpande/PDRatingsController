@@ -1,0 +1,16 @@
+PODS:
+  - PDRatingsController (0.1.0)
+
+DEPENDENCIES:
+  - PDRatingsController (from `../`)
+
+EXTERNAL SOURCES:
+  PDRatingsController:
+    :path: ../
+
+SPEC CHECKSUMS:
+  PDRatingsController: 226ca228fdb127430fbf4b5fd64d43a0047d3dd1
+
+PODFILE CHECKSUM: 87be4c14f7e0684490d4f373ef8814cd2062afc6
+
+COCOAPODS: 1.0.1
