@@ -9,6 +9,14 @@
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
+use it by Calling only method 
+
+[PDRatingsController ratingsWithAppId:<your_appleid_appstore>
+countAppUsed:<count_want_Alert_Appear>
+onViewController:<view_controller>]
+
+
+
 ## Requirements
 
 ## Installation
