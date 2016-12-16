@@ -17,15 +17,17 @@ Pod::Spec.new do |s|
 #   * Write the description between the DESC delimiters below.
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
-  s.description      = 'PDRatingsController is singleton class allows user to rate app after user uses app n number of times as specified.'
-TODO: Add long description of the pod here.
-                       DESC
+  s.description      = 'PDRatingsController is singleton class allows user to rate app after user uses app n number of times as specified. Steps - 1. import PDRatingsController
+2. Use following method where you want to initiate rating/review process.
+3. [PDRatingsController ratingsWithAppId:(NSString*)appId appName:(NSString*)appName countAppUsed:(NSInteger)count onViewController:(UIViewController*)_viewController];
+4. Rest will taken care of by this class.'
+
 
   s.homepage         = 'https://github.com/parag-deshpande/PDRatingsController'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'parag-deshpande' => 'parag.deshpande@klouddata.com' }
-  s.source           = { :git => 'https://github.com/<GITHUB_USERNAME>/PDRatingsController.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/parag-deshpande/PDRatingsController.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '8.0'
