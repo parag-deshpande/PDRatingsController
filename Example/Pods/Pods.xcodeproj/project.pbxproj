@@ -11,9 +11,10 @@
 		5826D4C04A67EB999F73DEFA61FE5E3C /* Pods-PDRatingsController_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 44A1DE6935AE53A5BF52E779CA1FE1FC /* Pods-PDRatingsController_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9D8978D0D3085A0BF915EE9B6B2EF7C7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
 		9FC81449B1F08D3CBA8B00B98A90A440 /* PDRatingsController-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DB9C5CEB6DE53E8B05CE44E2CFCAC814 /* PDRatingsController-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A0F1CDFE3F9E50868FBFBD33A337C487 /* ReplaceMe.m in Sources */ = {isa = PBXBuildFile; fileRef = C25C653CF5B27CBDF88660CA60C67286 /* ReplaceMe.m */; };
 		A3C4DE5D0AA245EE1751EE893292C3D8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
 		B4F9B2594929C4F4C1DE8734C078D6EF /* Pods-PDRatingsController_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A7B89A8EA4E4DDEEC64637D92413666C /* Pods-PDRatingsController_Tests-dummy.m */; };
+		F72A55421E0414E800668EE8 /* PDRatingsView.h in Headers */ = {isa = PBXBuildFile; fileRef = F72A55401E0414E800668EE8 /* PDRatingsView.h */; };
+		F72A55431E0414E800668EE8 /* PDRatingsView.m in Sources */ = {isa = PBXBuildFile; fileRef = F72A55411E0414E800668EE8 /* PDRatingsView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,11 +43,12 @@
 		A7B89A8EA4E4DDEEC64637D92413666C /* Pods-PDRatingsController_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PDRatingsController_Tests-dummy.m"; sourceTree = "<group>"; };
 		AA8F3BB1F972FA82D46C6C0830F1ED87 /* PDRatingsController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PDRatingsController-dummy.m"; sourceTree = "<group>"; };
 		BBB711BA3353003C35180E605668E393 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C25C653CF5B27CBDF88660CA60C67286 /* ReplaceMe.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ReplaceMe.m; sourceTree = "<group>"; };
 		C616D3B91CB5802F1E6DD67F2AED458B /* Pods-PDRatingsController_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PDRatingsController_Tests-resources.sh"; sourceTree = "<group>"; };
 		CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		DB9C5CEB6DE53E8B05CE44E2CFCAC814 /* PDRatingsController-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PDRatingsController-umbrella.h"; sourceTree = "<group>"; };
 		E1D4882224795AB8CE592E56BE079610 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F72A55401E0414E800668EE8 /* PDRatingsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDRatingsView.h; sourceTree = "<group>"; };
+		F72A55411E0414E800668EE8 /* PDRatingsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PDRatingsView.m; sourceTree = "<group>"; };
 		FB43526A9B625EE7040F949BC2C59FCD /* PDRatingsController.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = PDRatingsController.modulemap; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -111,7 +113,8 @@
 		570DCC37518E05A4E386CC4F0AE98362 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				C25C653CF5B27CBDF88660CA60C67286 /* ReplaceMe.m */,
+				F72A55401E0414E800668EE8 /* PDRatingsView.h */,
+				F72A55411E0414E800668EE8 /* PDRatingsView.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -187,6 +190,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F72A55421E0414E800668EE8 /* PDRatingsView.h in Headers */,
 				9FC81449B1F08D3CBA8B00B98A90A440 /* PDRatingsController-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -278,7 +282,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				29B976898CA5C417673EAFEC6A3D7FA8 /* PDRatingsController-dummy.m in Sources */,
-				A0F1CDFE3F9E50868FBFBD33A337C487 /* ReplaceMe.m in Sources */,
+				F72A55431E0414E800668EE8 /* PDRatingsView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

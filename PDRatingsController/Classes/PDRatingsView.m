@@ -15,6 +15,7 @@
 @interface PDRatingsView()
 {
     UIViewController *viewController;
+    NSString *strAppName;
 }
 
 @end
@@ -31,16 +32,21 @@ static PDRatingsView *ratings;
 
 
 #pragma mark For Creating Synchronized Singleton Class
-+(PDRatingsView *) ratingsWithAppId:(NSString*)appId countAppUsed:(NSInteger)count onViewController:(UIViewController*)_viewController
++(PDRatingsView *) ratingsWithAppId:(NSString*)appId appName:(NSString*)appName countAppUsed:(NSInteger)count onViewController:(UIViewController*)_viewController
 {
     @synchronized(self)
     {
         if(!ratings)
         {
-           ratings = [[PDRatingsView alloc] init];
+            ratings = [[PDRatingsView alloc] init];
             ratings.appID = appId;
             ratings.countAppUsed = count;
             ratings->viewController = _viewController;
+            
+            if(appName && appName.length > 0)
+                ratings->strAppName = appName;
+            else
+                ratings->strAppName = @"App";
         }
         
         [ratings checkCountForAppUsed];
@@ -66,7 +72,7 @@ static PDRatingsView *ratings;
     UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"Thank you" message:@"We are thrilled to hear you are fan of the app. If you have a second, please rate it" preferredStyle:UIAlertControllerStyleAlert];
     
     
-    UIAlertAction* rateSpintally = [UIAlertAction actionWithTitle:@"Rate Spintally" style:UIAlertActionStyleDefault handler:^(UIAlertAction *action) {
+    UIAlertAction* rateSpintally = [UIAlertAction actionWithTitle:[NSString stringWithFormat:@"Rate %@",strAppName] style:UIAlertActionStyleDefault handler:^(UIAlertAction *action) {
         
 //        if([delegate respondsToSelector:@selector(ratingsSelectedFor:)])
 //        {
@@ -141,7 +147,7 @@ static PDRatingsView *ratings;
         {
             
           // show first alert
-            UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"Do you love the Spintally App" message:@"" preferredStyle:UIAlertControllerStyleAlert];
+            UIAlertController *alertController = [UIAlertController alertControllerWithTitle:[NSString stringWithFormat:@"Do you love the %@ App",strAppName] message:@"" preferredStyle:UIAlertControllerStyleAlert];
             
             
             UIAlertAction* yes = [UIAlertAction actionWithTitle:@"Yes" style:UIAlertActionStyleDefault handler:^(UIAlertAction *action) {

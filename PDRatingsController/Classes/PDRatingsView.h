@@ -36,6 +36,6 @@ typedef enum : NSUInteger {
 @property (nonatomic,weak)                      id<PDRatingsViewDelegate> delegate;
 
 
-+(PDRatingsView *) ratingsWithAppId:(NSString*)appId countAppUsed:(NSInteger)count onViewController:(UIViewController*)viewController;
++(PDRatingsView *) ratingsWithAppId:(NSString*)appId appName:(NSString*)appName countAppUsed:(NSInteger)count onViewController:(UIViewController*)_viewController;
 
 @end
