@@ -1,0 +1,6 @@
+use_frameworks!
+target 'PDRatingsController_Tests' do
+  pod 'PDRatingsController', :path => '../'
+  
+  
+end
